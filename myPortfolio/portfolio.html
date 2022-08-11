@@ -2,74 +2,95 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
         <title>My resume</title>
     </head>
     <body>
-        <!-- Информация обо мне -->
-        <img src="https://avatars.githubusercontent.com/u/58991417?v=4" alt="" width="150">
-        <h1>Антон Лучкин</h1>
-        <p>Python <strong>разработчик</strong></p>
-        <p>Изучаю новые технологии, занимаюсь разработкой</p>
-        <hr>
-        <h2>Мои социальные сети</h2>
-        <ul>
-            <li><a href="https://instagram.com/minus.hunt" target="_blank">Instagram</a></li>
-            <li><a href="https://t.me/minustoxa" target="_blank">Telegram</a></li>
-            <li><a href="https://vk.com/maxbratkrayts" target="_blank">VKontakte</a></li>
-        </ul>
+        <div class="container">
+            <div class="info">
+                <!-- Информация обо мне -->
+                <img src="https://avatars.githubusercontent.com/u/58991417?v=4" alt="" class="avatar">
+                <div class="info-text">
+                    <h1>Маским Браткарайц</h1>
+                    <p>Python <strong>разработчик</strong></p>
+                    <p>Изучаю новые технологии, занимаюсь разработкой</p>
 
-        <hr>
+                    <h4>Мои социальные сети</h4>
+                    <a href="https://instagram.com/minus.hunt" target="_blank">Instagram</a> | 
+                    <a href="https://t.me/minustoxa" target="_blank">Telegram</a> | 
+                    <a href="https://vk.com/maxbratkrayts" target="_blank">VKontakte</a>
+                </div>
+            </div>
 
-        <!-- Мои достижения -->
-        <h2>Мои достижения</h2>
-        <ol>
-            <li>Отслужил в армии 16/17 год</li>
-            <li>Работал в Tinkoff 2018 год</li>
-            <li>Закончил колледж связи 2021 год</li>
-        </ol>
+            <div class="card bg-yellow">
+                <!-- Мои достижения -->
+                <h2>Мои достижения</h2>
+                <ul class="list">
+                    <li>Отслужил в армии 16/17 год</li>
+                    <li>Работал в Tinkoff 2018 год</li>
+                    <li>Закончил колледж связи 2021 год</li>
+                </ul>
+            </div>
 
-        <hr>
+            <div class="card bg-red">
+                <h2>Мои планы на будущее</h2>
+                <p>
+                    Я планирую развиваться в своей проффесиональной деятельности как программист. 
+                    Изучать языки программирования, технологии и фреймворки и активно применять 
+                    их в своей жизни для проффесиональной деятельности и в личных целях.
+                </p>
+            </div>
 
-        <!-- Опыт работы -->
-        <h2>Опыт работы</h2>
-        <table bordercolor="black" border="2">
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год работы</th>
-            </tr>
-            <tr>
-                <td>ИП Сирык </td>
-                <td>Разнорабочий</td>
-                <td>2015</td>
-            </tr>
-            <tr>
-                <td>Tinkoff Bank</td>
-                <td>Collector</td>
-                <td>2018</td>
-            </tr>
-            <tr>
-                <td>TK Lider Limited</td>
-                <td>System Administrator</td>
-                <td>2021-2022</td>
-            </tr>
-        </table>
+            <div class="card bg-green">
+                <!-- Опыт работы -->
+                <h2>Опыт работы</h2>
+                <table class="table">
+                    <tr>
+                        <td>ИП Сирык </td>
+                        <td>Разнорабочий</td>
+                        <td>2015</td>
+                    </tr>
+                    <tr>
+                        <td>Tinkoff Bank</td>
+                        <td>Collector</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <td>TK Lider Limited</td>
+                        <td>System Administrator</td>
+                        <td>2021-2022</td>
+                    </tr>
+                </table>
+            </div>
 
-        <hr>
+            <div class="contact">
+                <!-- Форма для связи -->
+                <h2>Связаться со мной</h2>
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Your name: </label>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your message</label>
+                        <textarea id="message" rows="2" cols="15" placeholder="Enter your message"></textarea>
+                    </div>
+                    <input type="submit" class="btn" value="Отправить!">
+                </form>
+            </div>
 
-        <!-- Форма для связи -->
-        <h2>Связаться со мной</h2>
-        <form action="/">
-            <label for="name">Your name: </label>
-            <input type="text" id="name" placeholder="Enter your name">
-            <br>
-            <label for="email">Your email</label>
-            <input type="email" id="email" placeholder="Enter your email">
-            <br>
-            <label for="message">Your message</label>
-            <input type="text" id="mesage" placeholder="Enter your message">
-            <br>
-            <input type="submit" value="Отправить!">
-        </form>
+            <!-- Position -->
+            <div class="position">
+                <div class="box"></div>
+            </div>
+
+            </div>
+        </div>
     </body>
 </html>
